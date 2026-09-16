@@ -102,3 +102,34 @@ The downloadable dataset is:
 
 ```text
 clean_reviews.csv
+# 📸 Application Screenshots
+
+## 🔍 Live Sentiment Predictor
+
+The dashboard provides an interactive interface where users can enter review text and perform sentiment prediction.
+
+![Live Sentiment Predictor](screenshots/01_live_sentiment_empty.png)
+
+---
+
+## 🟢 Positive Sentiment Prediction
+
+The application predicts a positive sentiment for positive customer reviews.
+
+![Positive Sentiment Prediction](screenshots/02_positive_prediction.png)
+
+---
+
+## 🟡 Neutral Sentiment Prediction
+
+The application can also identify neutral reviews.
+
+![Neutral Sentiment Prediction](screenshots/03_neutral_prediction.png)
+
+---
+
+## 🔴 Negative Sentiment Prediction
+
+The application identifies negative sentiment from customer review text.
+
+![Negative Sentiment Prediction](screenshots/04_negative_prediction.png)
