@@ -14,7 +14,7 @@ The dashboard also provides analytical views for **Sentiment, Rating Distributio
 
 AI Echo allows users to enter a customer review and predict its sentiment in real time.
 
-### Process:
+### Process
 
 1. User enters a review.
 2. The review text is cleaned.
@@ -22,7 +22,7 @@ AI Echo allows users to enter a customer review and predict its sentiment in rea
 4. The trained machine learning model processes the features.
 5. The predicted sentiment is displayed.
 
-### Sentiment Classes:
+### Sentiment Classes
 
 - 🟢 Positive
 - 🔴 Negative
@@ -102,34 +102,3 @@ The downloadable dataset is:
 
 ```text
 clean_reviews.csv
-# 📸 Application Screenshots
-
-## 🔍 Live Sentiment Predictor
-
-The dashboard provides an interactive interface where users can enter review text and perform sentiment prediction.
-
-![Live Sentiment Predictor](screenshots/01_live_sentiment_empty.png)
-
----
-
-## 🟢 Positive Sentiment Prediction
-
-The application predicts a positive sentiment for positive customer reviews.
-
-![Positive Sentiment Prediction](screenshots/02_positive_prediction.png)
-
----
-
-## 🟡 Neutral Sentiment Prediction
-
-The application can also identify neutral reviews.
-
-![Neutral Sentiment Prediction](screenshots/03_neutral_prediction.png)
-
----
-
-## 🔴 Negative Sentiment Prediction
-
-The application identifies negative sentiment from customer review text.
-
-![Negative Sentiment Prediction](screenshots/04_negative_prediction.png)
