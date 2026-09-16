@@ -2,96 +2,51 @@
 
 AI Echo is a **Machine Learning and Natural Language Processing (NLP) based sentiment analysis application** developed using **Python and Streamlit**.
 
-The application analyzes customer reviews and predicts their sentiment using a trained **Naive Bayes machine learning model** with **TF-IDF vectorization**.
+The application analyzes customer reviews and predicts their sentiment using **TF-IDF feature extraction and a trained Logistic Regression model**.
 
-Along with live sentiment prediction, the application provides different analytical views to understand customer sentiment based on:
-
-- Sentiment
-- Ratings
-- Platform
-- Verified Purchase
+The dashboard also provides analytical views for **Sentiment, Rating Distribution, Platform Analysis, and Verified Purchase Analysis**, along with an option to download the processed dataset.
 
 ---
 
-## 📌 Problem Statement
+# ✨ Features
 
-Customer reviews contain valuable information about customer opinions, experiences, and satisfaction.
+## 🔍 Live Sentiment Prediction
 
-However, when a large number of reviews are available, manually analyzing each review becomes difficult, time-consuming, and inefficient.
+AI Echo allows users to enter a customer review and predict its sentiment in real time.
 
-There is a need for an automated system that can:
+### Process:
 
-- Analyze customer review text.
-- Identify whether a review is Positive or Negative.
-- Provide an easy way to perform sentiment prediction.
-- Understand the overall sentiment distribution of reviews.
-- Analyze the relationship between ratings and sentiment.
-- Compare sentiment across different platforms.
-- Analyze sentiment based on verified purchases.
+1. User enters a review.
+2. The review text is cleaned.
+3. The text is transformed into TF-IDF features.
+4. The trained machine learning model processes the features.
+5. The predicted sentiment is displayed.
 
-AI Echo addresses this problem by using **Natural Language Processing and Machine Learning** to automatically analyze customer reviews.
+### Sentiment Classes:
 
----
-
-## 💡 Proposed Solution
-
-AI Echo provides an interactive sentiment analysis dashboard built using **Streamlit**.
-
-The system uses a trained **Naive Bayes classifier** and **TF-IDF vectorizer** to process review text and predict its sentiment.
-
-The application also uses a cleaned review dataset to provide different analytical views through an interactive sidebar.
-
-The system contains the following major components:
-
-1. Review text preprocessing
-2. TF-IDF feature transformation
-3. Naive Bayes sentiment prediction
-4. Sentiment distribution analysis
-5. Rating distribution analysis
-6. Platform-wise sentiment analysis
-7. Verified purchase sentiment analysis
+- 🟢 Positive
+- 🔴 Negative
+- 🟡 Neutral
 
 ---
 
-## ✨ Features
+## 📊 Sentiment Distribution
 
-### 🔍 1. Live Sentiment Prediction
+The Sentiment Distribution module provides an overview of the sentiment present in the dataset.
 
-Users can enter a review into the application.
-
-The system:
-
-1. Accepts the review text.
-2. Cleans the text.
-3. Converts the text into TF-IDF features.
-4. Passes the features to the trained Naive Bayes model.
-5. Predicts the sentiment.
-
-The predicted result is displayed as:
-
-- Positive
-- Negative
-- Other/unknown result if applicable
-
----
-
-### 📊 2. Sentiment Distribution
-
-This module displays the distribution of sentiments present in the review dataset.
-
-It provides:
+It displays:
 
 - Sentiment counts
 - Bar chart visualization
-- Data table containing sentiment counts
+- Sentiment summary table
 
-This helps understand the overall sentiment pattern in the dataset.
+This helps understand the overall sentiment pattern of the available customer reviews.
 
 ---
 
-### ⭐ 3. Rating Distribution
+## ⭐ Rating Distribution
 
-The application analyzes the distribution of customer ratings.
+The Rating Distribution module analyzes the number of reviews for each customer rating.
 
 It provides:
 
@@ -99,46 +54,51 @@ It provides:
 - Bar chart visualization
 - Rating distribution table
 
-This helps understand how customers have rated the products or services.
+This helps understand how customer ratings are distributed across the dataset.
 
 ---
 
-### 💻 4. Platform Analysis
+## 💻 Platform Analysis
 
-The application compares platforms with customer sentiment.
+The Platform Analysis module compares customer sentiment across different platforms.
 
 It uses a cross-tabulation between:
 
 - Platform
 - Sentiment
 
-The result is displayed using:
+The results are displayed using:
 
-- Bar chart
+- Bar chart visualization
 - Data table
 
 This helps identify sentiment patterns across different platforms.
 
 ---
 
-### ✅ 5. Verified Purchase Analysis
+## ✅ Verified Purchase Analysis
 
-The application analyzes sentiment based on verified purchase information.
+The Verified Purchase Analysis module compares customer sentiment based on verified purchase status.
 
-It compares:
+It analyzes:
 
-- Verified purchase status
+- Verified Purchase Status
 - Sentiment
 
-The result is displayed using a bar chart and data table.
+The results are displayed using:
+
+- Bar chart visualization
+- Data table
+
+This helps understand sentiment patterns among verified and non-verified purchases.
 
 ---
 
-### 📥 6. Dataset Download
+## 📥 Dataset Download
 
-Users can download the cleaned review dataset directly from the Streamlit sidebar.
+AI Echo provides an option to download the cleaned and processed review dataset directly from the Streamlit sidebar.
 
-The downloaded file is:
+The downloadable dataset is:
 
 ```text
 clean_reviews.csv
