@@ -125,25 +125,25 @@ clean_reviews.csv
 
 ## 🔎 Live Sentiment Predictor
 
-![Live Sentiment Predictor](./screenshots/01_live_sentiment_empty.png)
+![Live Sentiment Predictor](./01_live_sentiment_empty.png)
 
 ---
 
 ## 🟢 Positive Sentiment Prediction
 
-![Positive Sentiment Prediction](./screenshots/02_positive_prediction.png)
+![Positive Sentiment Prediction](./02_positive_prediction.png)
 
 ---
 
 ## 🟡 Neutral Sentiment Prediction
 
-![Neutral Sentiment Prediction](./screenshots/03_neutral_prediction.png)
+![Neutral Sentiment Prediction](./03_neutral_prediction.png)
 
 ---
 
 ## 🔴 Negative Sentiment Prediction
 
-![Negative Sentiment Prediction](./screenshots/04_negative_prediction.png)
+![Negative Sentiment Prediction](./04_negative_prediction.png)
 
 ---
 
